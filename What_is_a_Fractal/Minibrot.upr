@@ -1,0 +1,22 @@
+Fractal2 {
+fractal:
+  title="Fractal2" width=1920 height=1080 layers=1
+layer:
+  caption="Background" opacity=100 method=multipass
+mapping:
+  center=-0.559182126289301417/0.6438846306902737935 magn=63969750
+formula:
+  maxiter=3000 filename="Standard.ufm" entry="Mandelbrot" p_start=0/0
+  p_power=2/0 p_bailout=1000
+inside:
+  transfer=none filename="Standard.ucl" entry="Default"
+outside:
+  density=10 transfer=log filename="Standard.ucl" entry="Basic"
+  p_type=Iteration
+gradient:
+  smooth=yes rotation=54 index=414 color=526541 index=54 color=0
+  index=94 color=921252 index=174 color=50429 index=254 color=11332351
+  index=334 color=1921265
+opacity:
+  smooth=no index=0 opacity=255
+}

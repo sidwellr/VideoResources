@@ -1,0 +1,277 @@
+Fractal1 {
+fractal:
+  title="Fractal1" width=1927 height=1080 layers=2
+  credits="Rick Sidwell;2/29/2020"
+layer:
+  caption="Position 2" opacity=100 visible=no method=multipass
+mapping:
+  center=0/0 magn=1
+formula:
+  maxiter=1000 filename="Standard.ufm" entry="Julia" p_seed=0/0
+  p_power=2/0 p_bailout=100
+inside:
+  density=.5 transfer=linear repeat=no solid=4278222848
+  filename="dmj5.ucl" entry="dmj5-OrbitTraps" p_f_class.v_generic=100
+  p_f_class.v_coloring=100 p_f_class.v_gradientcoloring=100
+  p_f_class.v_dmj_orbittrapscoloring=100
+  p_f_class.f_trapselect="dmj5.ulb:DMJ_TrapSelect"
+  p_f_class.f_trapselect.v_generic=100
+  p_f_class.f_trapselect.v_generator=100
+  p_f_class.f_trapselect.v_dmj_trapselect=100
+  p_f_class.f_trapselect.p_trapalliterations="all iterations"
+  p_f_class.f_trapselect.p_trapstart=0
+  p_f_class.f_trapselect.p_trapiter=10
+  p_f_class.f_trapselect.p_trapskip=10
+  p_f_class.f_trapselect.p_traploop=1e20
+  p_f_class.p_trapselectthreshold=0.5
+  p_f_class.f_traptransform="common.ulb:TrapTransform"
+  p_f_class.f_traptransform.v_generic=100
+  p_f_class.f_traptransform.v_transform=100
+  p_f_class.f_traptransform.v_usertransform=100
+  p_f_class.f_traptransform.v_traptransform=100
+  p_f_class.f_traptransform.p_trapcenter=2/0
+  p_f_class.f_traptransform.p_trapcentermoves=no
+  p_f_class.f_traptransform.p_trapdrift=0/0
+  p_f_class.f_traptransform.p_trapscale=1
+  p_f_class.f_traptransform.p_traprotation=0
+  p_f_class.f_traptransform.p_traprotationstep=0
+  p_f_class.f_traptransform.p_trapskew=0
+  p_f_class.f_traptransform.p_trapskewstep=0
+  p_f_class.f_traptransform.p_trapaspect=1
+  p_f_class.f_trapshape="dmj5.ulb:DMJ_TrapShapePoint"
+  p_f_class.f_trapshape.v_generic=100
+  p_f_class.f_trapshape.v_trapshape=101
+  p_f_class.f_trapshape.v_dmj_trapshapepoint=100
+  p_f_class.f_traptransfer="common.ulb:TrapTransfer"
+  p_f_class.f_traptransfer.v_generic=100
+  p_f_class.f_traptransfer.v_transfer=100
+  p_f_class.f_traptransfer.v_traptransfer=100
+  p_f_class.f_traptransfer.p_preadd1=0
+  p_f_class.f_traptransfer.p_prescale=1
+  p_f_class.f_traptransfer.p_preadd2=0
+  p_f_class.f_traptransfer.p_function=linear
+  p_f_class.f_traptransfer.p_postadd1=0
+  p_f_class.f_traptransfer.p_postscale=1
+  p_f_class.f_traptransfer.p_postadd2=0
+  p_f_class.f_traptransfer.p_abs=no
+  p_f_class.f_trapmode="dmj5.ulb:DMJ_TrapModeClosest"
+  p_f_class.f_trapmode.v_generic=100
+  p_f_class.f_trapmode.v_trapmode=100
+  p_f_class.f_trapmode.v_trapmodewiththreshold=100
+  p_f_class.f_trapmode.v_dmj_trapmodeclosest=100
+  p_f_class.p_threshold=2 p_f_class.p_usesolid=no
+  p_f_class.f_traptexture="dmj5.ulb:DMJ_TrapShapeFlat"
+  p_f_class.f_traptexture.v_generic=100
+  p_f_class.f_traptexture.v_trapshape=101
+  p_f_class.f_traptexture.v_dmj_trapshapeflat=100
+  p_f_class.p_textureposttransform=no p_f_class.p_texturestrength=0.25
+  p_f_class.f_trapcoloring="common.ulb:TrapColoringDistance"
+  p_f_class.f_trapcoloring.v_generic=100
+  p_f_class.f_trapcoloring.v_trapcoloring=100
+  p_f_class.f_trapcoloring.v_trapcoloringdistance=100
+  p_f_class.f_trapcoloring.p_autoscale=no
+outside:
+  density=.5 transfer=linear repeat=no solid=4294901760
+  filename="dmj5.ucl" entry="dmj5-OrbitTraps" p_f_class.v_generic=100
+  p_f_class.v_coloring=100 p_f_class.v_gradientcoloring=100
+  p_f_class.v_dmj_orbittrapscoloring=100
+  p_f_class.f_trapselect="dmj5.ulb:DMJ_TrapSelect"
+  p_f_class.f_trapselect.v_generic=100
+  p_f_class.f_trapselect.v_generator=100
+  p_f_class.f_trapselect.v_dmj_trapselect=100
+  p_f_class.f_trapselect.p_trapalliterations="all iterations"
+  p_f_class.f_trapselect.p_trapstart=0
+  p_f_class.f_trapselect.p_trapiter=10
+  p_f_class.f_trapselect.p_trapskip=10
+  p_f_class.f_trapselect.p_traploop=1e20
+  p_f_class.p_trapselectthreshold=0.5
+  p_f_class.f_traptransform="common.ulb:TrapTransform"
+  p_f_class.f_traptransform.v_generic=100
+  p_f_class.f_traptransform.v_transform=100
+  p_f_class.f_traptransform.v_usertransform=100
+  p_f_class.f_traptransform.v_traptransform=100
+  p_f_class.f_traptransform.p_trapcenter=2/0
+  p_f_class.f_traptransform.p_trapcentermoves=no
+  p_f_class.f_traptransform.p_trapdrift=0/0
+  p_f_class.f_traptransform.p_trapscale=1
+  p_f_class.f_traptransform.p_traprotation=0
+  p_f_class.f_traptransform.p_traprotationstep=0
+  p_f_class.f_traptransform.p_trapskew=0
+  p_f_class.f_traptransform.p_trapskewstep=0
+  p_f_class.f_traptransform.p_trapaspect=1
+  p_f_class.f_trapshape="dmj5.ulb:DMJ_TrapShapePoint"
+  p_f_class.f_trapshape.v_generic=100
+  p_f_class.f_trapshape.v_trapshape=101
+  p_f_class.f_trapshape.v_dmj_trapshapepoint=100
+  p_f_class.f_traptransfer="common.ulb:TrapTransfer"
+  p_f_class.f_traptransfer.v_generic=100
+  p_f_class.f_traptransfer.v_transfer=100
+  p_f_class.f_traptransfer.v_traptransfer=100
+  p_f_class.f_traptransfer.p_preadd1=0
+  p_f_class.f_traptransfer.p_prescale=1
+  p_f_class.f_traptransfer.p_preadd2=0
+  p_f_class.f_traptransfer.p_function=linear
+  p_f_class.f_traptransfer.p_postadd1=0
+  p_f_class.f_traptransfer.p_postscale=1
+  p_f_class.f_traptransfer.p_postadd2=0
+  p_f_class.f_traptransfer.p_abs=no
+  p_f_class.f_trapmode="dmj5.ulb:DMJ_TrapModeClosest"
+  p_f_class.f_trapmode.v_generic=100
+  p_f_class.f_trapmode.v_trapmode=100
+  p_f_class.f_trapmode.v_trapmodewiththreshold=100
+  p_f_class.f_trapmode.v_dmj_trapmodeclosest=100
+  p_f_class.p_threshold=2 p_f_class.p_usesolid=no
+  p_f_class.f_traptexture="dmj5.ulb:DMJ_TrapShapeFlat"
+  p_f_class.f_traptexture.v_generic=100
+  p_f_class.f_traptexture.v_trapshape=101
+  p_f_class.f_traptexture.v_dmj_trapshapeflat=100
+  p_f_class.p_textureposttransform=no p_f_class.p_texturestrength=0.25
+  p_f_class.f_trapcoloring="common.ulb:TrapColoringDistance"
+  p_f_class.f_trapcoloring.v_generic=100
+  p_f_class.f_trapcoloring.v_trapcoloring=100
+  p_f_class.f_trapcoloring.v_trapcoloringdistance=100
+  p_f_class.f_trapcoloring.p_autoscale=no
+gradient:
+  comments="http:////www.colourlovers.com//palette//1518908//Valentine\
+  s_Day" smooth=yes index=0 color=0 index=0 color=15790320 index=80
+  color=13671935 index=160 color=9005047 index=240 color=5329368
+  index=320 color=1842366
+opacity:
+  smooth=no index=0 opacity=255
+layer:
+  caption="Position 0" opacity=100 method=multipass
+mapping:
+  center=0/0 magn=1
+formula:
+  maxiter=1000 filename="Standard.ufm" entry="Julia" p_seed=0/0
+  p_power=2/0 p_bailout=100
+inside:
+  density=.5 transfer=linear offset=375 repeat=no solid=4278222848
+  filename="dmj5.ucl" entry="dmj5-OrbitTraps" p_f_class.v_generic=100
+  p_f_class.v_coloring=100 p_f_class.v_gradientcoloring=100
+  p_f_class.v_dmj_orbittrapscoloring=100
+  p_f_class.f_trapselect="dmj5.ulb:DMJ_TrapSelect"
+  p_f_class.f_trapselect.v_generic=100
+  p_f_class.f_trapselect.v_generator=100
+  p_f_class.f_trapselect.v_dmj_trapselect=100
+  p_f_class.f_trapselect.p_trapalliterations="all iterations"
+  p_f_class.f_trapselect.p_trapstart=0
+  p_f_class.f_trapselect.p_trapiter=10
+  p_f_class.f_trapselect.p_trapskip=10
+  p_f_class.f_trapselect.p_traploop=1e20
+  p_f_class.p_trapselectthreshold=0.5
+  p_f_class.f_traptransform="common.ulb:TrapTransform"
+  p_f_class.f_traptransform.v_generic=100
+  p_f_class.f_traptransform.v_transform=100
+  p_f_class.f_traptransform.v_usertransform=100
+  p_f_class.f_traptransform.v_traptransform=100
+  p_f_class.f_traptransform.p_trapcenter=0/0
+  p_f_class.f_traptransform.p_trapcentermoves=no
+  p_f_class.f_traptransform.p_trapdrift=0/0
+  p_f_class.f_traptransform.p_trapscale=1
+  p_f_class.f_traptransform.p_traprotation=0
+  p_f_class.f_traptransform.p_traprotationstep=0
+  p_f_class.f_traptransform.p_trapskew=0
+  p_f_class.f_traptransform.p_trapskewstep=0
+  p_f_class.f_traptransform.p_trapaspect=1
+  p_f_class.f_trapshape="dmj5.ulb:DMJ_TrapShapePoint"
+  p_f_class.f_trapshape.v_generic=100
+  p_f_class.f_trapshape.v_trapshape=101
+  p_f_class.f_trapshape.v_dmj_trapshapepoint=100
+  p_f_class.f_traptransfer="common.ulb:TrapTransfer"
+  p_f_class.f_traptransfer.v_generic=100
+  p_f_class.f_traptransfer.v_transfer=100
+  p_f_class.f_traptransfer.v_traptransfer=100
+  p_f_class.f_traptransfer.p_preadd1=0
+  p_f_class.f_traptransfer.p_prescale=1
+  p_f_class.f_traptransfer.p_preadd2=0
+  p_f_class.f_traptransfer.p_function=linear
+  p_f_class.f_traptransfer.p_postadd1=0
+  p_f_class.f_traptransfer.p_postscale=1
+  p_f_class.f_traptransfer.p_postadd2=0
+  p_f_class.f_traptransfer.p_abs=no
+  p_f_class.f_trapmode="dmj5.ulb:DMJ_TrapModeClosest"
+  p_f_class.f_trapmode.v_generic=100
+  p_f_class.f_trapmode.v_trapmode=100
+  p_f_class.f_trapmode.v_trapmodewiththreshold=100
+  p_f_class.f_trapmode.v_dmj_trapmodeclosest=100
+  p_f_class.p_threshold=2 p_f_class.p_usesolid=no
+  p_f_class.f_traptexture="dmj5.ulb:DMJ_TrapShapeFlat"
+  p_f_class.f_traptexture.v_generic=100
+  p_f_class.f_traptexture.v_trapshape=101
+  p_f_class.f_traptexture.v_dmj_trapshapeflat=100
+  p_f_class.p_textureposttransform=no p_f_class.p_texturestrength=0.25
+  p_f_class.f_trapcoloring="common.ulb:TrapColoringDistance"
+  p_f_class.f_trapcoloring.v_generic=100
+  p_f_class.f_trapcoloring.v_trapcoloring=100
+  p_f_class.f_trapcoloring.v_trapcoloringdistance=100
+  p_f_class.f_trapcoloring.p_autoscale=no
+outside:
+  density=.5 transfer=linear repeat=no solid=4294901760
+  filename="dmj5.ucl" entry="dmj5-OrbitTraps" p_f_class.v_generic=100
+  p_f_class.v_coloring=100 p_f_class.v_gradientcoloring=100
+  p_f_class.v_dmj_orbittrapscoloring=100
+  p_f_class.f_trapselect="dmj5.ulb:DMJ_TrapSelect"
+  p_f_class.f_trapselect.v_generic=100
+  p_f_class.f_trapselect.v_generator=100
+  p_f_class.f_trapselect.v_dmj_trapselect=100
+  p_f_class.f_trapselect.p_trapalliterations="all iterations"
+  p_f_class.f_trapselect.p_trapstart=0
+  p_f_class.f_trapselect.p_trapiter=10
+  p_f_class.f_trapselect.p_trapskip=10
+  p_f_class.f_trapselect.p_traploop=1e20
+  p_f_class.p_trapselectthreshold=0.5
+  p_f_class.f_traptransform="common.ulb:TrapTransform"
+  p_f_class.f_traptransform.v_generic=100
+  p_f_class.f_traptransform.v_transform=100
+  p_f_class.f_traptransform.v_usertransform=100
+  p_f_class.f_traptransform.v_traptransform=100
+  p_f_class.f_traptransform.p_trapcenter=0/0
+  p_f_class.f_traptransform.p_trapcentermoves=no
+  p_f_class.f_traptransform.p_trapdrift=0/0
+  p_f_class.f_traptransform.p_trapscale=1
+  p_f_class.f_traptransform.p_traprotation=0
+  p_f_class.f_traptransform.p_traprotationstep=0
+  p_f_class.f_traptransform.p_trapskew=0
+  p_f_class.f_traptransform.p_trapskewstep=0
+  p_f_class.f_traptransform.p_trapaspect=1
+  p_f_class.f_trapshape="dmj5.ulb:DMJ_TrapShapePoint"
+  p_f_class.f_trapshape.v_generic=100
+  p_f_class.f_trapshape.v_trapshape=101
+  p_f_class.f_trapshape.v_dmj_trapshapepoint=100
+  p_f_class.f_traptransfer="common.ulb:TrapTransfer"
+  p_f_class.f_traptransfer.v_generic=100
+  p_f_class.f_traptransfer.v_transfer=100
+  p_f_class.f_traptransfer.v_traptransfer=100
+  p_f_class.f_traptransfer.p_preadd1=0
+  p_f_class.f_traptransfer.p_prescale=1
+  p_f_class.f_traptransfer.p_preadd2=0
+  p_f_class.f_traptransfer.p_function=linear
+  p_f_class.f_traptransfer.p_postadd1=0
+  p_f_class.f_traptransfer.p_postscale=1
+  p_f_class.f_traptransfer.p_postadd2=0
+  p_f_class.f_traptransfer.p_abs=no
+  p_f_class.f_trapmode="dmj5.ulb:DMJ_TrapModeClosest"
+  p_f_class.f_trapmode.v_generic=100
+  p_f_class.f_trapmode.v_trapmode=100
+  p_f_class.f_trapmode.v_trapmodewiththreshold=100
+  p_f_class.f_trapmode.v_dmj_trapmodeclosest=100
+  p_f_class.p_threshold=2 p_f_class.p_usesolid=no
+  p_f_class.f_traptexture="dmj5.ulb:DMJ_TrapShapeFlat"
+  p_f_class.f_traptexture.v_generic=100
+  p_f_class.f_traptexture.v_trapshape=101
+  p_f_class.f_traptexture.v_dmj_trapshapeflat=100
+  p_f_class.p_textureposttransform=no p_f_class.p_texturestrength=0.25
+  p_f_class.f_trapcoloring="common.ulb:TrapColoringDistance"
+  p_f_class.f_trapcoloring.v_generic=100
+  p_f_class.f_trapcoloring.v_trapcoloring=100
+  p_f_class.f_trapcoloring.v_trapcoloringdistance=100
+  p_f_class.f_trapcoloring.p_autoscale=no
+gradient:
+  comments="http:////www.colourlovers.com//palette//1518908//Valentine\
+  s_Day" smooth=yes index=0 color=0 index=0 color=15790320 index=80
+  color=13671935 index=160 color=9005047 index=240 color=5329368
+  index=320 color=1842366
+opacity:
+  smooth=no index=0 opacity=255
+}

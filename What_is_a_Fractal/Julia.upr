@@ -1,0 +1,110 @@
+Fractal3 {
+fractal:
+  title="Fractal3" width=1920 height=1080 layers=2
+  credits="Rick Sidwell;2/29/2020"
+layer:
+  caption="Escape Time" opacity=100 method=multipass transparent=yes
+mapping:
+  center=1.1/0 magn=1.25
+formula:
+  maxiter=1000 filename="Standard.ufm" entry="Julia" p_seed=0.35/-0.06
+  p_power=2/0 p_bailout=1000
+inside:
+  transfer=none filename="Standard.ucl" entry="Default"
+outside:
+  transfer=linear repeat=no filename="Standard.ucl" entry="Basic"
+  p_type=Iteration
+gradient:
+  comments="http:////www.colourlovers.com//palette//1638591//Jazz_Nigh\
+  t_Out" linked=yes smooth=yes index=0 color=0 index=40 color=3085592
+  index=168 color=9634615 index=286 color=16143390 index=360
+  color=11992869 index=399 color=16249909
+opacity:
+  smooth=yes index=0 opacity=5 index=40 opacity=255 index=168
+  opacity=255 index=286 opacity=255 index=360 opacity=255 index=399
+  opacity=255
+layer:
+  caption="Orbit Trap" opacity=100 method=multipass
+mapping:
+  center=-1.1/0 magn=1.25
+formula:
+  maxiter=1000 filename="Standard.ufm" entry="Julia" p_seed=0.35/-0.06
+  p_power=2/0 p_bailout=1000
+inside:
+  transfer=none filename="Standard.ucl" entry="Default"
+outside:
+  transfer=linear repeat=no filename="dmj5.ucl"
+  entry="dmj5-OrbitTraps" p_f_class.v_generic=100
+  p_f_class.v_coloring=100 p_f_class.v_gradientcoloring=100
+  p_f_class.v_dmj_orbittrapscoloring=100
+  p_f_class.f_trapselect="dmj5.ulb:DMJ_TrapSelect"
+  p_f_class.f_trapselect.v_generic=100
+  p_f_class.f_trapselect.v_generator=100
+  p_f_class.f_trapselect.v_dmj_trapselect=100
+  p_f_class.f_trapselect.p_trapalliterations="all iterations"
+  p_f_class.f_trapselect.p_trapstart=0
+  p_f_class.f_trapselect.p_trapiter=10
+  p_f_class.f_trapselect.p_trapskip=10
+  p_f_class.f_trapselect.p_traploop=1e20
+  p_f_class.p_trapselectthreshold=0.5
+  p_f_class.f_traptransform="common.ulb:TrapTransform"
+  p_f_class.f_traptransform.v_generic=100
+  p_f_class.f_traptransform.v_transform=100
+  p_f_class.f_traptransform.v_usertransform=100
+  p_f_class.f_traptransform.v_traptransform=100
+  p_f_class.f_traptransform.p_trapcenter=0/0
+  p_f_class.f_traptransform.p_trapcentermoves=no
+  p_f_class.f_traptransform.p_trapdrift=0/0
+  p_f_class.f_traptransform.p_trapscale=1
+  p_f_class.f_traptransform.p_traprotation=0
+  p_f_class.f_traptransform.p_traprotationstep=0
+  p_f_class.f_traptransform.p_trapskew=0
+  p_f_class.f_traptransform.p_trapskewstep=0
+  p_f_class.f_traptransform.p_trapaspect=1
+  p_f_class.f_trapshape="dmj5.ulb:DMJ_TrapShapeRadialWave"
+  p_f_class.f_trapshape.v_generic=100
+  p_f_class.f_trapshape.v_trapshape=101
+  p_f_class.f_trapshape.v_dmj_trapshaperadialwave=100
+  p_f_class.f_trapshape.p_merging=add
+  p_f_class.f_trapshape.p_amplitude1=1
+  p_f_class.f_trapshape.p_frequency1=4
+  p_f_class.f_trapshape.p_phase1=0
+  p_f_class.f_trapshape.p_amplitude2=0
+  p_f_class.f_trapshape.p_frequency2=8
+  p_f_class.f_trapshape.p_phase2=0
+  p_f_class.f_traptransfer="common.ulb:TrapTransfer"
+  p_f_class.f_traptransfer.v_generic=100
+  p_f_class.f_traptransfer.v_transfer=100
+  p_f_class.f_traptransfer.v_traptransfer=100
+  p_f_class.f_traptransfer.p_preadd1=0
+  p_f_class.f_traptransfer.p_prescale=1
+  p_f_class.f_traptransfer.p_preadd2=0
+  p_f_class.f_traptransfer.p_function=linear
+  p_f_class.f_traptransfer.p_postadd1=0
+  p_f_class.f_traptransfer.p_postscale=1
+  p_f_class.f_traptransfer.p_postadd2=0
+  p_f_class.f_traptransfer.p_abs=no
+  p_f_class.f_trapmode="dmj5.ulb:DMJ_TrapModeClosest"
+  p_f_class.f_trapmode.v_generic=100
+  p_f_class.f_trapmode.v_trapmode=100
+  p_f_class.f_trapmode.v_trapmodewiththreshold=100
+  p_f_class.f_trapmode.v_dmj_trapmodeclosest=100
+  p_f_class.p_threshold=0.2 p_f_class.p_usesolid=no
+  p_f_class.f_traptexture="dmj5.ulb:DMJ_TrapShapeFlat"
+  p_f_class.f_traptexture.v_generic=100
+  p_f_class.f_traptexture.v_trapshape=101
+  p_f_class.f_traptexture.v_dmj_trapshapeflat=100
+  p_f_class.p_textureposttransform=no p_f_class.p_texturestrength=0.25
+  p_f_class.f_trapcoloring="common.ulb:TrapColoringDistance"
+  p_f_class.f_trapcoloring.v_generic=100
+  p_f_class.f_trapcoloring.v_trapcoloring=100
+  p_f_class.f_trapcoloring.v_trapcoloringdistance=100
+  p_f_class.f_trapcoloring.p_autoscale=yes
+gradient:
+  comments="http:////www.colourlovers.com//palette//1638591//Jazz_Nigh\
+  t_Out" smooth=yes index=0 color=16249909 index=39 color=11992869
+  index=113 color=16143390 index=231 color=9634615 index=359
+  color=3085592 index=399 color=0
+opacity:
+  smooth=no index=0 opacity=255
+}
