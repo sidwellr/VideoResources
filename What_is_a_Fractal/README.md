@@ -39,6 +39,10 @@ I used the following fractal programs to prepare the video:
 [Julia Circle](JuliaCircle.flame)
 ![Julia Circle](JuliaCircle1.png)
 
+### Mandelbulber
+[Mandelbulb](Mandelbulb.fract)
+![Mandelbulb](Mandelbulb.png)
+
 ### Ultra Fractal
 [Mandelbrot](Mandelbrot.upr)
 ![Mandelbrot](Mandelbrot.png)
