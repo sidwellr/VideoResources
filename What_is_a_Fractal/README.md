@@ -1,6 +1,6 @@
 # Resources for the "What is a Fractal?" video
 
-Here are some resources for the video exploring what fractals are. You can watch the video at TBD
+Here are some resources for the video exploring what fractals are. You can watch the video at https://youtu.be/fHU6JypRxSI.
 
 ## Links
 ### Fractal Programs
